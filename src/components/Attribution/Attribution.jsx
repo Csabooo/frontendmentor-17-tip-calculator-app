@@ -13,11 +13,11 @@ function Attribution() {
             href="https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX"
             target="_blank"
             rel="noreferrer">
-            &nbsp;Frontend Mentor.
+            &nbsp;Frontend Mentor
           </a>
           &nbsp;Coded by
           <a className={classes.az} href="https://www.frontendmentor.io/profile/Csabooo">
-            &nbsp;Csaba Müller.
+            &nbsp;Csaba Müller
           </a>
         </span>
       </div>
