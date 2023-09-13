@@ -6,11 +6,11 @@ import UserInput from "./components/UserInput/UserInput";
 export default function App() {
   return (
     <>
-      <div>
-        <h1>SPLI<br />TTER</h1>
+      <h1>SPLI<br />TTER</h1>
+      <main className="max-w-md mx-auto">
         <UserInput></UserInput>
         <ResultsTable></ResultsTable>
-      </div >
+      </main >
 
       <Attribution></Attribution>
     </>

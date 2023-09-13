@@ -1,0 +1,27 @@
+.result {
+  @apply bg-very_dark_cyan rounded-xl p-5;
+}
+
+.result button {
+  @apply bg-dark_grayish_cyan rounded-md p-2 text-xl block w-full text-very_dark_cyan hover:text-very_dark_cyan hover:bg-light_grayish_cyan;
+}
+
+label {
+  @apply text-white;
+}
+
+span {
+  @apply text-grayish_cyan;
+}
+
+.text {
+  @apply flex flex-col text-left leading-4;
+}
+
+.table {
+  @apply grid grid-cols-2 text-left py-5;
+}
+
+.table p {
+  @apply text-right text-strong_cyan text-3xl;
+}

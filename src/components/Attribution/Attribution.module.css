@@ -1,4 +1,12 @@
+.az {
+  @apply font-bold text-very_dark_cyan;
+}
+
 a,
 span {
-  @apply text-xs;
+  @apply text-[10px] font-normal;
+}
+
+.all {
+  @apply pt-7;
 }

@@ -4,19 +4,19 @@ import classes from "./Attribution.module.css";
 
 function Attribution() {
   return (
-    <div>
-      <div className="text-center ext-[12px]">
+    <div className={classes.all}>
+      <div>
         <span>
           Challenge by
           <a
-            className={classes}
+            className={classes.az}
             href="https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX"
             target="_blank"
             rel="noreferrer">
-            &nbsp;Frontend Mentor.{" "}
+            &nbsp;Frontend Mentor.
           </a>
           &nbsp;Coded by
-          <a className="" href="https://www.frontendmentor.io/profile/Csabooo">
+          <a className={classes.az} href="https://www.frontendmentor.io/profile/Csabooo">
             &nbsp;Csaba Müller.
           </a>
         </span>

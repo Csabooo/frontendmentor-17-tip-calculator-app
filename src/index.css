@@ -6,6 +6,20 @@
 
 @layer base {
   body {
-    @apply bg-light_grayish_cyan font-space-mono font-bold text-very_dark_cyan;
+    @apply bg-light_grayish_cyan font-space-mono font-bold text-center text-2xl flex flex-col justify-center align-middle min-h-screen;
+  }
+
+  h1 {
+    @apply -tracking-widest_2xl py-10 text-dark_grayish_cyan;
+  }
+
+  label {
+    @apply text-base;
+  }
+}
+
+@layer components {
+  main {
+    @apply bg-white p-8 rounded-2xl;
   }
 }

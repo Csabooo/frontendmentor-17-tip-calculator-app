@@ -17,6 +17,10 @@ export default {
       fontFamily: {
         "space-mono": ["Space Mono", "monospace"],
       },
+      letterSpacing: {
+        widest: ".25em",
+        widest_2xl: "-0.5em",
+      },
     },
   },
   plugins: [],
