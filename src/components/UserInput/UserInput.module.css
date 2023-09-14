@@ -4,8 +4,6 @@
   padding-left: 30px;
   padding-right: 15px;
 
-  /*   border: 1px solid theme(colors.light_grayish_cyan);
- */
   @apply bg-very_light_grayish_cyan w-full rounded-md mb-5 py-1 text-very_dark_cyan text-right focus:outline-none focus:border-2 border-light_grayish_cyan;
 }
 
@@ -14,7 +12,6 @@
     12px;
   padding-left: 30px;
   padding-right: 15px;
-  /* border: 1px solid theme(colors.light_grayish_cyan); */
   @apply bg-very_light_grayish_cyan w-full rounded-md mb-5 xl:mb-0 py-1 text-very_dark_cyan text-right focus:outline-none focus:border-2 border-light_grayish_cyan;
 }
 
@@ -22,10 +19,14 @@
   @apply text-grayish_cyan text-left w-full block;
 }
 
-.buttons {
-  @apply transition ease-in-out delay-100 bg-very_dark_cyan rounded-md py-2 px-5 text-white hover:text-very_dark_cyan hover:bg-light_grayish_cyan active:bg-light_grayish_cyan xl:text-xl xl:mx-2;
+.buttons[type="button"] {
+  @apply transition ease-in-out delay-150 bg-very_dark_cyan text-white rounded-md py-2 px-5 hover:bg-light_grayish_cyan hover:text-very_dark_cyan focus:bg-light_grayish_cyan focus:text-very_dark_cyan xl:text-xl xl:mx-2;
 }
 
 .custom {
   @apply bg-very_light_grayish_cyan rounded-md py-1 px-2 xl:mx-2 text-very_dark_cyan focus:outline-none focus:border-2 border-light_grayish_cyan placeholder:text-very_dark_cyan placeholder:text-right focus:text-right text-right xl:text-2xl;
+}
+
+.error {
+  @apply text-red-600 text-base relative bottom-[87px] right-[-100px] xl:bottom-[67px] xl:right-[-130px];
 }

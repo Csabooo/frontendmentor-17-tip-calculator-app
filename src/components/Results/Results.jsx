@@ -1,7 +1,25 @@
-import React from "react";
+import { useState } from "react";
+
 import classes from "./Results.module.css"
 
-function Results() {
+function Results(props) {
+
+    const initialUserInput = {
+        "tipAmount": 0.00,
+        "total": 0.00
+    };
+
+    const formatter = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+    });
+
+
+    const [userInput, setUserInput] = useState(initialUserInput);
+
+
     return (
         <div className={classes.result}>
             <form>
@@ -11,7 +29,7 @@ function Results() {
                             <label>Tip Amount</label>
                             <span>/ person</span>
                         </div>
-                        <p>$4.27</p>
+                        <p>{formatter.format(userInput["tipAmount"])}</p>
                     </div>
 
                     <div className={classes.table}>
@@ -19,7 +37,7 @@ function Results() {
                             <label>Total</label>
                             <span>/ person</span>
                         </div>
-                        <p>$32.79</p>
+                        <p>{formatter.format(userInput["total"])}</p>
                     </div>
                 </div>
 
