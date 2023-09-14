@@ -27,5 +27,5 @@
 }
 
 .custom {
-  @apply bg-very_light_grayish_cyan rounded-md py-1 px-3 text-very_dark_cyan focus:outline-none focus:border-2 border-light_grayish_cyan placeholder:text-very_dark_cyan placeholder:text-right focus:text-right text-right xl:text-2xl;
+  @apply bg-very_light_grayish_cyan rounded-md py-1 px-2 xl:mx-2 text-very_dark_cyan focus:outline-none focus:border-2 border-light_grayish_cyan placeholder:text-very_dark_cyan placeholder:text-right focus:text-right text-right xl:text-2xl;
 }
