@@ -1,9 +1,6 @@
 import React from 'react'
 import classes from "./UserInput.module.css";
-import dollar_logo from "../../assets/images/icon-dollar.svg";
 
-
-const dollar = <img src={dollar_logo} alt="" srcset="" />
 
 function UserInput() {
 
