@@ -15,7 +15,7 @@
   padding-left: 30px;
   padding-right: 15px;
   /* border: 1px solid theme(colors.light_grayish_cyan); */
-  @apply bg-very_light_grayish_cyan w-full rounded-md mb-5 py-1 text-very_dark_cyan text-right focus:outline-none focus:border-2 border-light_grayish_cyan;
+  @apply bg-very_light_grayish_cyan w-full rounded-md mb-5 xl:mb-0 py-1 text-very_dark_cyan text-right focus:outline-none focus:border-2 border-light_grayish_cyan;
 }
 
 .label {
@@ -23,9 +23,9 @@
 }
 
 .buttons {
-  @apply bg-very_dark_cyan rounded-md py-1 px-5 text-white hover:text-very_dark_cyan hover:bg-light_grayish_cyan active:bg-light_grayish_cyan;
+  @apply transition ease-in-out delay-100 bg-very_dark_cyan rounded-md py-2 px-5 text-white hover:text-very_dark_cyan hover:bg-light_grayish_cyan active:bg-light_grayish_cyan xl:text-xl xl:mx-2;
 }
 
 .custom {
-  @apply bg-very_light_grayish_cyan rounded-md py-1 px-5 text-very_dark_cyan focus:outline-none focus:border-2 border-light_grayish_cyan placeholder:text-very_dark_cyan placeholder:text-right focus:text-right text-right;
+  @apply bg-very_light_grayish_cyan rounded-md py-1 px-3 text-very_dark_cyan focus:outline-none focus:border-2 border-light_grayish_cyan placeholder:text-very_dark_cyan placeholder:text-right focus:text-right text-right xl:text-2xl;
 }

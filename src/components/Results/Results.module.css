@@ -3,7 +3,7 @@
 }
 
 .result button {
-  @apply bg-dark_grayish_cyan rounded-md p-2 text-xl block w-full text-very_dark_cyan hover:text-very_dark_cyan hover:bg-light_grayish_cyan;
+  @apply transition ease-in-out delay-100 bg-dark_grayish_cyan rounded-md p-2 text-xl block w-full text-very_dark_cyan hover:text-very_dark_cyan hover:bg-light_grayish_cyan xl:mt-24;
 }
 
 label {

@@ -7,14 +7,14 @@ function UserInput() {
 
     return (
         <div>
-            <form >
+            <form className='xl:pr-7' >
                 <label className={classes.label} htmlFor="bill">Bill</label>
 
                 <input className={classes.dollar} type="text" id='bill' />
 
-                <div >
+                <div className='py-5'>
                     <label className={classes.label} htmlFor="">Select Tip %</label>
-                    <div className="grid grid-cols-2 gap-x-4 gap-y-4 py-5">
+                    <div className="grid grid-cols-2 gap-x-4 gap-y-4 py-5 xl:grid-cols-3 xl:gap-x-2 ">
                         <button className={classes.buttons}>5%</button>
                         <button className={classes.buttons}>10%</button>
                         <button className={classes.buttons}>15%</button>

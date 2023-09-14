@@ -7,7 +7,7 @@ export default function App() {
   return (
     <>
       <h1>SPLI<br />TTER</h1>
-      <main className="max-w-md mx-auto">
+      <main className="max-w-md xl:grid xl:grid-cols-2 xl:max-w-4xl mx-auto">
         <UserInput></UserInput>
         <Results></Results>
       </main >
