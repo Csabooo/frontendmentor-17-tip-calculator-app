@@ -1,8 +1,7 @@
 import React from "react";
-import classes from "./ResultsTable.module.css";
+import classes from "./Results.module.css"
 
-
-function ResultsTable() {
+function Results() {
     return (
         <div className={classes.result}>
             <form>
@@ -31,4 +30,4 @@ function ResultsTable() {
     )
 }
 
-export default ResultsTable;
+export default Results;

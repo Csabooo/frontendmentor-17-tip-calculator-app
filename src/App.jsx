@@ -1,7 +1,7 @@
 import React from "react";
 import Attribution from "./components/Attribution/Attribution";
-import ResultsTable from "./components/ResultsTable/ResultsTable";
 import UserInput from "./components/UserInput/UserInput";
+import Results from "./components/Results/Results";
 
 export default function App() {
   return (
@@ -9,7 +9,7 @@ export default function App() {
       <h1>SPLI<br />TTER</h1>
       <main className="max-w-md mx-auto">
         <UserInput></UserInput>
-        <ResultsTable></ResultsTable>
+        <Results></Results>
       </main >
 
       <Attribution></Attribution>
