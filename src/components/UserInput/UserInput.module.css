@@ -20,7 +20,7 @@
 }
 
 .buttons[type="button"] {
-  @apply transition ease-in-out delay-150 bg-very_dark_cyan text-white rounded-md py-2 px-5 hover:bg-light_grayish_cyan hover:text-very_dark_cyan focus:bg-light_grayish_cyan focus:text-very_dark_cyan xl:text-xl xl:mx-2;
+  @apply transition ease-in-out delay-150 bg-very_dark_cyan text-white rounded-md py-2 px-5  focus:bg-light_grayish_cyan focus:text-very_dark_cyan xl:text-xl xl:mx-2;
 }
 
 .custom {
@@ -29,4 +29,8 @@
 
 .error {
   @apply text-red-600 text-base relative bottom-[87px] right-[-100px] xl:bottom-[67px] xl:right-[-130px];
+}
+
+.errorBill {
+  @apply text-red-600 text-base relative bottom-[87px] right-[-100px] xl:bottom-[87px] xl:right-[-130px];
 }
