@@ -11,13 +11,13 @@ function UserInput(props) {
     const [defaultBill, setBill] = useState(props.bill);
     const [defaultPeople, setPeople] = useState(props.people);
     const [defaultTip, setTip] = useState(props.tip);
-    const [customTipValue, setCustomTipValue] = useState("");
+    const [customTipValue, setCustomTipValue] = useState(props.custom);
 
 
 
     useEffect(() => {
-        props.calc(defaultBill, defaultPeople, defaultTip);
-    }, [defaultBill, defaultPeople, defaultTip]);
+        props.calc(defaultBill, defaultPeople, defaultTip, customTipValue);
+    }, [defaultBill, defaultPeople, defaultTip, customTipValue]);
 
 
     useEffect(() => {
@@ -25,6 +25,7 @@ function UserInput(props) {
             setBill(0);
             setPeople(0);
             setTip(0);
+            setCustomTipValue("");
             props.onResetAcknowledged();
         }
     }, [props.resetTrigger]);
@@ -54,10 +55,12 @@ function UserInput(props) {
 
     const tipHandler = (event) => {
         const tip = event.target.value;
-        if (event.target.type === "text") {
-            setCustomTipValue(tip);
-        }
         setTip(tip);
+    };
+
+    const customtipHandler = (event) => {
+        const tips = event.target.value;
+        setCustomTipValue(tips);
     };
 
 
@@ -78,7 +81,7 @@ function UserInput(props) {
                         <button type="button" className={classes.buttons} onClick={tipHandler} value="15">15%</button>
                         <button type="button" className={classes.buttons} onClick={tipHandler} value="25">25%</button>
                         <button type="button" className={classes.buttons} onClick={tipHandler} value="50">50%</button>
-                        <input className={classes.custom} onChange={tipHandler} type="text" placeholder='Custom' value={customTipValue} />
+                        <input className={classes.custom} onChange={customtipHandler} type="text" placeholder='Custom' value={customTipValue} />
                     </div>
                 </div>
 

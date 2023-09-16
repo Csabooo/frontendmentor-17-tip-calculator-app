@@ -8,6 +8,7 @@ function Results(props) {
     const [defaultTipAmount, setTipAmount] = useState(props.tips);
     const [defaultTotal, setTotal] = useState(props.totals);
 
+
     const formatter = new Intl.NumberFormat('en-US', {
         style: 'currency',
         currency: 'USD',
@@ -21,12 +22,12 @@ function Results(props) {
         setTotal(props.totals);
     }, [props.tips, props.totals]);
 
+
+
     const resetHandler = (event) => {
         event.preventDefault();
         props.onReset();
-
-    }
-
+    };
 
     return (
         <div className={classes.result}>
