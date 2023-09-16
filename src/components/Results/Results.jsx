@@ -20,6 +20,7 @@ function Results(props) {
     useEffect(() => {
         setTipAmount(props.tips);
         setTotal(props.totals);
+
     }, [props.tips, props.totals]);
 
 
@@ -39,22 +40,23 @@ function Results(props) {
                             <label>Tip Amount</label>
                             <span>/ person</span>
                         </div>
+                        <p>{isNaN(defaultTipAmount) || defaultTipAmount === Infinity ? "$0.00" : formatter.format(defaultTipAmount)}</p>
 
-                        <p>{formatter.format(defaultTipAmount)}</p>
-                    </div>
+
+                        {/*                         <p>{isNaN(defaultTipAmount) ? "$0.00" : formatter.format(defaultTipAmount)}</p>
+ */}                    </div>
 
                     <div className={classes.table}>
                         <div className={classes.text}>
                             <label>Total</label>
                             <span>/ person</span>
                         </div>
-                        <p>{formatter.format(defaultTotal)}</p>
+                        <p>{isNaN(defaultTotal) || defaultTotal === Infinity ? "$0.00" : formatter.format(defaultTotal)}</p>
                     </div>
                 </div>
 
                 <button type='button' onClick={resetHandler}>RESET</button>
             </form>
-
         </div >
     )
 }

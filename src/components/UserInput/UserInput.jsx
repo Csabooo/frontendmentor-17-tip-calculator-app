@@ -17,7 +17,7 @@ function UserInput(props) {
 
     useEffect(() => {
         props.calc(defaultBill, defaultPeople, defaultTip, customTipValue);
-    }, [defaultBill, defaultPeople, defaultTip, customTipValue]);
+    }, [defaultBill, defaultPeople, defaultTip,]);
 
 
     useEffect(() => {
@@ -29,6 +29,10 @@ function UserInput(props) {
             props.onResetAcknowledged();
         }
     }, [props.resetTrigger]);
+
+    useEffect(() => {
+
+    }, [defaultPeopleState, defaultBillState]);
 
     const billHandler = (event) => {
         const bill = event.target.value;
@@ -47,6 +51,9 @@ function UserInput(props) {
         if (people <= 0) {
             setUserPeopleState(false);
         }
+
+        else
+            setUserPeopleState(true);
         setPeople(people);
 
     }
@@ -57,8 +64,8 @@ function UserInput(props) {
     };
 
     const customtipHandler = (event) => {
-        const tips = event.target.value;
-        setCustomTipValue(tips);
+        const customTip = event.target.value;
+        setCustomTipValue(customTip);
     };
 
     return (
