@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import classes from "./Results.module.css"
 
 
 function Results(props) {
+
+    const [defaultTipAmount, setTipAmount] = useState(props.tips);
+    const [defaultTotal, setTotal] = useState(props.totals);
 
     const formatter = new Intl.NumberFormat('en-US', {
         style: 'currency',
@@ -13,13 +16,22 @@ function Results(props) {
 
     });
 
+    useEffect(() => {
+        setTipAmount(props.tips);
+        setTotal(props.totals);
+    }, [props.tips, props.totals]);
 
+    const resetHandler = (event) => {
+        event.preventDefault();
+        props.onReset();
+
+    }
 
 
     return (
         <div className={classes.result}>
 
-            <form>
+            <form >
                 <div >
                     <div className={classes.table}>
                         <div className={classes.text}>
@@ -27,7 +39,7 @@ function Results(props) {
                             <span>/ person</span>
                         </div>
 
-                        <p>{formatter.format(props.tips)}</p>
+                        <p>{formatter.format(defaultTipAmount)}</p>
                     </div>
 
                     <div className={classes.table}>
@@ -35,11 +47,11 @@ function Results(props) {
                             <label>Total</label>
                             <span>/ person</span>
                         </div>
-                        <p>{formatter.format(props.totals)}</p>
+                        <p>{formatter.format(defaultTotal)}</p>
                     </div>
                 </div>
 
-                <button type='reset'>RESET</button>
+                <button type='button' onClick={resetHandler}>RESET</button>
             </form>
 
         </div >
