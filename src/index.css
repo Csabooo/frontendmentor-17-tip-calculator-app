@@ -10,7 +10,7 @@
   }
 
   h1 {
-    @apply -tracking-widest_2xl py-10 text-dark_grayish_cyan;
+    @apply -tracking-widest_2xl pt-0 pb-4 text-dark_grayish_cyan;
   }
 
   label {

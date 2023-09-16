@@ -47,8 +47,6 @@ function UserInput(props) {
         if (people <= 0) {
             setUserPeopleState(false);
         }
-        else
-            setUserPeopleState(true);
         setPeople(people);
 
     }
@@ -62,9 +60,6 @@ function UserInput(props) {
         const tips = event.target.value;
         setCustomTipValue(tips);
     };
-
-
-
 
     return (
         <div>
