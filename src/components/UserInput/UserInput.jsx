@@ -17,7 +17,7 @@ function UserInput(props) {
 
     useEffect(() => {
         props.calc(defaultBill, defaultPeople, defaultTip, customTipValue);
-    }, [defaultBill, defaultPeople, defaultTip,]);
+    }, [defaultBill, defaultPeople, defaultTip, customTipValue]);
 
 
     useEffect(() => {
@@ -75,7 +75,7 @@ function UserInput(props) {
                 <input className={classes.dollar} onChange={billHandler} type="number" id='bill' min="0" value={defaultBill} />
                 {!defaultBillState && <p className={classes.errorBill} >Can't be zero!</p>}
 
-                <div className='py-5'>
+                <div className=''>
                     <label className={classes.label} htmlFor="">Select Tip %</label>
                     <div className="grid grid-cols-2 gap-x-4 gap-y-4 py-5 xl:grid-cols-3 xl:gap-x-2 ">
                         <button type="button" className={classes.buttons} onClick={tipHandler} value="5">5%</button>

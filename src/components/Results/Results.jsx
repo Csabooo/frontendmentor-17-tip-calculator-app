@@ -41,10 +41,7 @@ function Results(props) {
                             <span>/ person</span>
                         </div>
                         <p>{isNaN(defaultTipAmount) || defaultTipAmount === Infinity ? "$0.00" : formatter.format(defaultTipAmount)}</p>
-
-
-                        {/*                         <p>{isNaN(defaultTipAmount) ? "$0.00" : formatter.format(defaultTipAmount)}</p>
- */}                    </div>
+                    </div>
 
                     <div className={classes.table}>
                         <div className={classes.text}>

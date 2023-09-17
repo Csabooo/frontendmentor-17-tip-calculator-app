@@ -10,7 +10,7 @@
   }
 
   h1 {
-    @apply -tracking-widest_2xl pt-0 pb-4 text-dark_grayish_cyan;
+    @apply -tracking-widest_2xl pt-0 pb-2 text-dark_grayish_cyan;
   }
 
   label {
@@ -20,6 +20,6 @@
 
 @layer components {
   main {
-    @apply bg-white p-8 rounded-2xl;
+    @apply bg-white py-4 px-8 xl:p-8 rounded-2xl;
   }
 }

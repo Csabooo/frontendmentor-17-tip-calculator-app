@@ -58,13 +58,6 @@ export default function App() {
 
   }
 
-  /*   useEffect(() => {
-      if (defaultTipAmount === "NaN" && defaultTotal === "NaN") {
-        setTipAmount(0);
-        setTotal(0);
-      }
-    }, [defaultTipAmount, defaultTotal]); */
-
   useEffect(() => {
     calculate();
 
